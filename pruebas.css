@@ -1,0 +1,118 @@
+* {
+	font-family: sans-serif;
+}
+
+#nav {
+	position: fixed;
+	background-color: blue;
+	width: 100%;
+	height: 70px;
+	z-index: 100;
+	margin-top: -70px;
+	text-align: center;
+	font-size: 2rem
+}
+
+
+
+
+
+
+.cajas {
+	padding: 5vmax;
+	font-size: 3vmax;
+}
+
+/*S*/
+body {
+	margin: 0px;
+	margin-top: 70px;
+}
+
+#caja1 {
+	background-color: lime;
+}
+
+#caja2 {
+	background-color: pink;
+}
+
+#caja3 {
+	background-color: lightblue;
+}
+
+#caja4 {
+	background-color: grey;
+}
+
+
+
+
+
+
+/*Caja roja con cajita amarilla en el centro*/
+.contenedor {
+	position: relative;
+	background: red;
+	width: 450px;
+	height: 450px;
+	margin: 200px auto;
+}
+
+.hijos {
+	height: 100px;
+	width: 100px;
+	background: yellow;
+	position: absolute;
+}
+
+#hijo2 {
+	right: 0
+}
+
+#hijo3 {
+	bottom: 0
+}
+
+#hijo4 {
+	right: 0;
+	bottom: 0;
+}
+
+#hijo5 {
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto
+}
+
+
+
+
+
+
+
+
+/*Overflow*/
+.overflow_boxes {
+	display: inline-block;
+	margin: 10px 10px;
+	padding: 10px;
+	width: 280px;
+	height: 250px;
+	background-color: lime;
+	border: 5px solid blue;
+}
+
+#overflow {
+	overflow: scroll;
+}
+
+#overflow2{
+	overflow: auto;
+}
+
+#overflow3 {
+	overflow: hidden;
+}
