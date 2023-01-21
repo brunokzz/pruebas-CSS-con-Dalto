@@ -5,13 +5,15 @@
 	<link rel="stylesheet" type="text/css" href="pruebas.css">
 </head>
 <body>
-	<div id="nav">BARRA DE NAVEGACIÓN</div>
+	<header id="header">BARRA DE NAVEGACIÓN</header>
 
+<!--Cajas de color pastel-->
 	<div id="caja1" class="cajas">Caja 1</div>
 	<div id="caja2" class="cajas">Caja 2</div>
 	<div id="caja3" class="cajas">Caja 3</div>
 	<div id="caja4" class="cajas">Caja 4</div>
 
+<!--Caja roja con cajitas amarillas-->
 	<div class="contenedor">
 		<div class="hijos" id="hijo1">Hijo1</div>
 		<div class="hijos" id="hijo2">Hijo2</div>
@@ -19,8 +21,10 @@
 		<div class="hijos" id="hijo4">Hijo4</div>
 		<div class="hijos" id="hijo5">Hijo5</div>
 	</div>
+	<hr>
 
-	<h3 style="text-align: center;">Overflow <br>Scroll / Auto / Hidden</h3>
+<!--Overflow (tres cubos con fotos de perro)-->
+	<h3 class="titles">Overflow <br>Scroll / Auto / Hidden</h3>
 	<div class="overflow_boxes" id="overflow">
 		<p>Este texto no necesita scrolls, pero aún así están puestos xq tiene overflow scroll</p>
 	</div>
@@ -30,5 +34,55 @@
 		<div class="overflow_boxes" id="overflow3">
 		<img style="width:400px; height: 300px;" src="https://img.freepik.com/foto-gratis/lindo-perro-pastor-posando-aislado-sobre-fondo-blanco_155003-46179.jpg?w=2000">
 	</div>
+	
+	<hr>
+
+<!--Float (cubo rosa con foto de perro y texto)-->
+	<h3 class="titles">Float</h3>
+	<div id="float_box">
+		<img style="width:400px; height: 300px; float: right; margin: 15px" src="https://img.freepik.com/foto-gratis/lindo-perro-pastor-posando-aislado-sobre-fondo-blanco_155003-46179.jpg?w=2000">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<hr>
+
+<!--Pseudoelementos-->
+	<h3 class="titles">Pseudoelementos<br>::first-line / ::first-letter / ::placeholder / ::selection / ::before y ::after</h3>
+	<div class="pseudoelement_boxes" id="firstline_box" style="margin-left: 10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat.</div>
+	<div class="pseudoelement_boxes" id="firstletter_box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+	<div class="pseudoelement_boxes">
+		<input id="pseudo_input" type="text" placeholder="Inserte su nombre">
+	</div>
+	<div class="pseudoelement_boxes" style="text-align: center;" id="selection_text">SELECCIONÁ ESTE TEXTO</div>
+	<b class="pseudoelement_boxes" style="text-align: center;" id="before-after_text"> A </b>
+	<hr>
+
+<!--Pseudoclases-->
+	<h3 class="titles">Pseudoclases<br>:hover / :link y :visited / :active / :focus</h3>
+	<div style="display: flex; justify-content: center;">
+		<div class="pseudoclass_boxes" id="hover_box"></div>
+		<div class="pseudoclass_boxes">
+			<a href="https://slither.io" target="_BLANK" id="slither_link">LINK NO VISITED</a>
+			<a href="https://google.com" target="_BLANK" id="google_link">LINK VISITADO</a>
+		</div>
+		<div class="pseudoclass_boxes" id="active_box">CLICKEA ACÁ AUNQUE NO SEA UN BOTÓN</div>
+		<input type="text" class="pseudoclass_boxes" id="focus_box">
+	</div>
+	<hr>
+	<br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
